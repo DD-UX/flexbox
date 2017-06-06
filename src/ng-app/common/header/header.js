@@ -9,17 +9,14 @@
     .controller('HeaderController', HeaderController);
   
   
-  HeaderController.$inject = ['loginService'];
+  HeaderController.$inject = [];
   
   /**
    * HeaderController
    * @constructor
    */
-  function HeaderController(loginService) {
+  function HeaderController() {
     var $ctrl = this;
-    
-    // Logout method
-    $ctrl.logout = loginService.logout;
     
     // Is the long nav collapsed?
     $ctrl.isLongNavCollapsed = true;

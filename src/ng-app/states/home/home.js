@@ -32,19 +32,9 @@
     $stateProvider.state('home', {
       url: '/',
       views: {
-        'header': {
-          controller: 'HeaderController',
-          templateUrl: 'common/header/header__view.html',
-          controllerAs: '$ctrl'
-        },
         'main': {
           controller: 'HomeController',
           templateUrl: 'states/home/home__view.html',
-          controllerAs: '$ctrl'
-        },
-        'footer': {
-          controller: 'FooterController',
-          templateUrl: 'common/footer/footer__view.html',
           controllerAs: '$ctrl'
         }
       },

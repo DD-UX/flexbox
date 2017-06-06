@@ -20,6 +20,7 @@
     "angular-scroll": "^1.0.0",
     "angular-ui-bootstrap": "^2.3.0",
     "angular-ui-router": "^0.3.2",
+    "angular-ui-swiper": "^2.3.7",
     "animate.css": "^3.5.2",
     "autoprefixer": "^6.5.3",
     "body-parser": "^1.15.2",
@@ -44,7 +45,8 @@
     "jquery": "^3.1.1",
     "merge-stream": "^1.0.1",
     "papaparse": "^4.3.2",
-    "pgwbrowser": "^1.3.0"
+    "pgwbrowser": "^1.3.0",
+    "swiper": "^3.4.2"
   },
   "bugs": {
     "url": "https://github.com/ScalableCoop/skillscape/issues"

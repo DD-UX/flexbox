@@ -33,16 +33,9 @@
 
   </head>
 
-  <body data-ng-controller="AppController" data-ng-class="{'header-active': $state.current.views.header.controller !== null}"> 
-  	<!-- Header partial -->
-	<span data-ng-cloak data-ui-view="header" data-ng-if="$state.current.views.header.controller !== null"></span>
-
+  <body data-ng-controller="AppController">
   	<!-- Main partial -->
 	<div data-ui-view="main"></div>
-
-  	<!-- Footer partial -->
-	<span data-ng-cloak data-ui-view="footer" data-ng-if="$state.current.views.footer.controller !== null"></span>
-
 	<!-- Scripts compiled -->
 	<script type="text/javascript" src="js/all.js"></script>
   </body>

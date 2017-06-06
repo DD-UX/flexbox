@@ -24,7 +24,7 @@
       'ngAnimate',
       'ui.bootstrap',
       'duScroll',
-      'papa-promise'
+	  'ui.swiper'
     ])
     .value('duScrollDuration', 500)
     .value('duScrollOffset', 60)
