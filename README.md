@@ -1,4 +1,4 @@
-# Flexbox talk (by <img src="https://raw.githubusercontent.com/DD-UX/flexbox/master/src/img/img-toptal-logo@2x.png" alt="Toptal" width="120">)
+# Flexbox talk (by <img style="vertical-align: middle;" src="https://raw.githubusercontent.com/DD-UX/flexbox/master/src/img/img-toptal-logo@2x.png" alt="Toptal" width="120">)
 ![Flexbox talk by Toptal](https://raw.githubusercontent.com/DD-UX/flexbox/master/src/img/readme/introduction.jpg)
 * Why Use Flexbox?
 * The Basics of Flexbox
