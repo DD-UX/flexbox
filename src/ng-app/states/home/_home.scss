@@ -30,6 +30,13 @@
 		}
 	}
 	
+	&__list{
+		text-align: left;
+		li{
+			margin-bottom: $spacer * 2;
+		}
+	}
+	
 	&__heading{
 		&--big{
 			font-size: 7rem;
