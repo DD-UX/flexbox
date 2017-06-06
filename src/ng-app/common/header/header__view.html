@@ -1,0 +1,49 @@
+<header data-ng-class="{'navbar-mobile-active': !$ctrl.isLongNavCollapsed}"
+		class="navbar fixed-top navbar-inverse flex-row flex-wrap justify-content-md-end bg__purple">
+
+
+		<!-- Toptal branding -->
+		<a href="#" data-ui-sref="home" class="mr-auto navbar-brand">
+			<h1>
+                <img src="img/logo.png" alt="Skillscape">
+                Skillscape
+                <small class="hidden-md-down">Unpacking skills inside jobs and cities</small>
+            </h1>
+		</a>
+
+		<!-- Right navbar (collapsed in mobile) -->
+		<nav class="c-nav navbar-collapse collapse align-self-center"
+			 data-uib-collapse="$ctrl.isLongNavCollapsed">
+			<ul class="navbar-nav flex-md-row flex-sm-column">
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-ui-sref="home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-ui-sref="jobs">Jobs</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-ui-sref="cities">Cities</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-ui-sref="about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#" data-ui-sref="methods">Methods</a>
+				</li>
+				<li class="nav-item nav-item-logout">
+					<a class="nav-link" href="#" data-ng-click="$ctrl.logout()">Logout</a>
+				</li>
+			</ul>
+		</nav>
+
+		<!-- Mobile collapser button -->
+		<button class="navbar-toggler navbar-toggler-right hidden-md-up transition collapsed" 
+				type="button" data-ng-click="$ctrl.isLongNavCollapsed = !$ctrl.isLongNavCollapsed"
+				aria-expanded="{{!$ctrl.isLongNavCollapsed}}" aria-label="Toggle navigation"
+				data-ng-class="{'active': !$ctrl.isLongNavCollapsed}">
+
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+
+	</header>

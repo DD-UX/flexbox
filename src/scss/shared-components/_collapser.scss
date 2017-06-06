@@ -1,0 +1,35 @@
+.u-collapser {
+  position: relative;
+  
+  &:after{
+    content: "\f107";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 1em;
+    text-rendering: auto;
+    font-smoothing: antialiased;
+
+    color: get_color("purple");
+    margin: 2px 0 0 5px; 
+    
+    transform-origin: center center;
+    transition: all 200ms linear;
+    
+    @media only screen and (min-width: #{$screen-sm}) {
+      content: none;
+    }
+  }
+
+
+  &.u-active{
+    &:after{
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media only screen and (min-width: #{$screen-sm}) {
+  .u-collapsed__mobile.ng-hide {
+    display: block!important;
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta charset="utf-8">
+
+	<meta content="width=device-width,initial-scale=1.0" name="viewport">
+
+	<link rel="shortcut icon" href="img/favicon.png?v=2">
+
+	<title data-ng-bind-template="{{$mainCtrl.pageTitle || 'Flexbox talk'}}">Flexbox talk</title>
+
+
+	<!-- Facebook OG -->
+	<meta property="og:title" content="{{$mainCtrl.pageTitle || 'Flexbox talk'}}">
+	<meta property="og:site_name" content="{{$mainCtrl.pageTitle || 'Flexbox talk'}}">
+	<meta property="og:image" content="">
+	<meta property="og:url" content="">
+	<meta property="og:description" content="">
+	<meta property="fb:app_id" content="">
+	<meta property="og:type" content="App">
+	
+	<!-- Twitter card -->
+	<meta name="twitter:card" content="">
+	<meta name="twitter:site" content="">
+	
+	<!-- General meta information -->
+	<meta name="description" content="">
+
+	<!-- Styles compiled -->
+	<link href="css/main.css" rel="stylesheet">
+
+
+  </head>
+
+  <body data-ng-controller="AppController" data-ng-class="{'header-active': $state.current.views.header.controller !== null}"> 
+  	<!-- Header partial -->
+	<span data-ng-cloak data-ui-view="header" data-ng-if="$state.current.views.header.controller !== null"></span>
+
+  	<!-- Main partial -->
+	<div data-ui-view="main"></div>
+
+  	<!-- Footer partial -->
+	<span data-ng-cloak data-ui-view="footer" data-ng-if="$state.current.views.footer.controller !== null"></span>
+
+	<!-- Scripts compiled -->
+	<script type="text/javascript" src="js/all.js"></script>
+  </body>
+</html>

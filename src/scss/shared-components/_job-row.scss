@@ -1,0 +1,80 @@
+/**
+ * `m-job-row` is a "module" set of classes to format the actual job modules.
+ */
+
+.m-job-row{
+  background-color: lighten(get_color("green"), 20%);
+  border: solid 2px get-color("red");
+  border-left: none;
+  border-right: none;
+
+  h2{
+    text-transform: capitalize;
+  }
+
+  &:first-of-type{
+    border-top-color: get-color("orange");
+  }
+
+  &:last-child{
+    border-bottom-width: 2px;
+  }
+  
+  &__image{
+    padding-top: $spacer;
+    background-color: get-color("white");
+  }
+
+  &__data{
+    background-color: get-color("purple");
+    color: get-color("white");
+    padding-top: $spacer;
+    padding-bottom: $spacer;
+  }
+
+  &__filters{
+    box-shadow: inset -2px 0 4px 0 rgba(get-color("purple"), 0.8);
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+	.collapse{
+      &.in{
+        display: block;
+      }
+	}
+  }
+
+  @media only screen and (min-width: #{$screen-lg}) {
+    .m-job-row__data{
+      order: -1;
+    }
+
+    .m-job-row__filters{
+      order: 1;
+      box-shadow: inset 2px 0 4px 0 rgba(get-color("purple"), 0.8);
+    }
+  }
+
+  @media only screen and (max-width: #{$screen-lg}) and (min-width: #{$screen-sm}) {
+    .m-job-row__data{
+        order: -2;
+      }
+
+      .m-job-row__filters{
+        order: -1;
+        box-shadow: inset 2px 0 4px 0 rgba(get-color("purple"), 0.8);
+      }
+  }
+
+  @media only screen and (max-width: #{$screen-sm}) {
+    .m-job-row__filters{
+      box-shadow: none;
+    }
+  }
+
+  /*
+  @include media-breakpoint-down(sm) {
+    &__order-last {
+      order: 10;
+    }
+  }*/
+}
