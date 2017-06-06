@@ -1,44 +1,47 @@
 <!-- Main partial -->
 <section class="page-home swipe">
 	<swiper
-		effect="cube"
+		effect="coverflow"
 		grab-cursor="true"
-		cube="{
-			  shadow: true,
-			  slideShadows: true,
-			  shadowOffset: 20,
-			  shadowScale: 0.94
-		  }"
+		keyboard-control="true"
+		speed="600"
 	>
 	<slides>
 		
-		<!-- Introduction -->
+		<!-- Cover -->
 		<slide>
 			<h1 class="logo">Toptal</h1>
-			<h2 class="page-home__heading">First date with Flex</h2>
+			<h2 class="page-home__heading page-home__heading--big">First date with <span class="text__green">Flex</span></h2>
 			<article class="page-home__slide">
 				<div class="profile">
 					<p class="h1">
 						<img class="profile__avatar" src="/img/dd.jpg" alt="DD">
 						<small>by</small>
-						Diego Díaz (DD)
+						Diego Díaz (<span class="text__green">DD</span>)
 					</p>
 				</div>
 			</article>
 		</slide>
 		
 		<!-- Introduction -->
-		<slide>
-			<h1 class="logo">Toptal</h1>
-			<h2 class="page-home__heading">Getting into Flexbox</h2>
+		<slide>			
 			<article class="page-home__slide">
-				<div class="profile">
-					<p class="h1">
-						<img class="profile__avatar" src="/img/dd.jpg" alt="DD">
-						<small>by</small>
-						Diego Díaz (DD)
-					</p>
-				</div>
+				<h2 class="page-home__heading page-home__heading--toptal">Intro</h2>
+				<p>
+					<a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">Flexbox</a> 
+					was born in 2009 to provide a new layout system... a
+					<span class="text__green">"flex layout"</span> 
+				</p>
+				<!-- 
+					===					
+					Other layouts systems are:
+					===
+					* Block: for laying out documents
+					* Inline: for laying out text
+					* Table: for laying out tabulated data
+					* Positioning: for creating complex layouts without a specific format					
+					===
+				-->				
 			</article>
 		</slide>
 		

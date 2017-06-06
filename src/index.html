@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-controller="AppController as $mainCtrl">
   <head>
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta charset="utf-8">
@@ -8,7 +8,7 @@
 
 	<link rel="shortcut icon" href="img/favicon.png?v=2">
 
-	<title data-ng-bind-template="{{$mainCtrl.pageTitle || 'Flexbox talk'}}">Flexbox talk</title>
+	<title data-ng-bind-template="{{$mainCtrl.pageTitle}}">Flexbox talk</title>
 
 
 	<!-- Facebook OG -->
@@ -33,7 +33,7 @@
 
   </head>
 
-  <body data-ng-controller="AppController">
+  <body>
   	<!-- Main partial -->
 	<div data-ui-view="main"></div>
 	<!-- Scripts compiled -->

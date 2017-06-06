@@ -4,6 +4,7 @@
 
 .page-home{
 	$this: &;
+	background: get-color("blue");
 	
 	.logo{
 		background: url(#{$img-route}img-toptal-logo@2x.png) no-repeat;
@@ -30,9 +31,25 @@
 	}
 	
 	&__heading{
-		font-size: 7rem;
-		margin-bottom: 5rem;
+		&--big{
+			font-size: 7rem;
+			margin-bottom: 5rem;
+		}
+		&--toptal{
+			&:before{
+				content: "";
+				display: inline-block;
+				background: url(#{$img-route}favicon.png);
+				background-size: contain;
+				width: 26px;
+				height: 26px;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+		}
 	}
+	
+	
 	
 	.swiper-slide{
 		&:after{
@@ -53,5 +70,6 @@
 	
 	&__slide{
 		width: 100%;
+		max-width: 980px;
 	}
 }

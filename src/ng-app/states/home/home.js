@@ -39,7 +39,7 @@
         }
       },
       data: {
-        pageTitle: 'Skillscape'
+        pageTitle: 'First date with Flex'
       }
     });
   }
