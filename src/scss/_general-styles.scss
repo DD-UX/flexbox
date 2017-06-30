@@ -50,3 +50,7 @@ body {
         a {color: inherit;}
     }
 }
+
+[class^="col-"]{
+	box-sizing: border-box;
+}

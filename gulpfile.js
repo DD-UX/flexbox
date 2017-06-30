@@ -66,6 +66,7 @@ gulp.task('sass', function () {
   cssStream = gulp
     .src([
         modules + 'animate.css/animate.css',
+        modules + 'highlight.js/styles/codepen-embed.css',
         modules + 'angular-ui-swiper/dist/angular-ui-swiper.css',
         modules + 'tether/dist/css/tether.css'
     ]);
@@ -97,6 +98,8 @@ gulp.task('scripts', ['ng-templates'], function() {
             modules + 'angular-ui-bootstrap/dist/ui-bootstrap-tpls.js',
             modules + 'angular-ui-router/release/angular-ui-router.js',
 			modules + 'angular-ui-swiper/dist/angular-ui-swiper.js',
+			modules + 'highlight.js/lib/highlight.js',
+			modules + 'angular-highlightjs/build/angular-highlightjs.js',
             modules + 'pgwbrowser/pgwbrowser.js',
             source + 'ng-app/app.js',
             source + 'ng-app/conf.templates.js',
@@ -136,8 +139,8 @@ gulp.task('data', function() {
 // - https://www.npmjs.com/package/gulp-tinypng-compress
 // - https://github.com/ben-eb/gulp-svgmin
 gulp.task('images', function() {
-    var jpgPngStream = gulp
-          .src(source + 'img/**/*.{png,jpg,jpeg}')
+    var images = gulp
+          .src(source + 'img/**/*.{png,jpg,jpeg, gif}')
           // .pipe(tinypng({
           //     key: '<TinyPNG API Key>',
           //     sigFile: publicUrl + 'img/.tinypng-sigs',
@@ -150,7 +153,7 @@ gulp.task('images', function() {
           .pipe(svgmin());
           
 
-    return merge(svgStream, jpgPngStream)
+    return merge(svgStream, images)
             .pipe(gulp.dest(publicUrl + 'img'));
 });
 

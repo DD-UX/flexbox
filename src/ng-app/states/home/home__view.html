@@ -12,14 +12,109 @@
 		<!-- Cover -->
 		<slide data-hash="Cover">
 			<h1 class="logo">Toptal</h1>
-			<h2 class="page-home__heading page-home__heading--big">First date with <span class="text__green">Flex</span></h2>
+			<h2 class="page-home__heading page-home__heading--big">
+				First date with <span class="text__green">Flex</span>
+				<small>(Primera cita con Flex)</small>
+			</h2>
 			<article class="page-home__slide">
-				<div class="profile">
-					<p class="h1">
-						<img class="profile__avatar" src="/img/dd.jpg" alt="DD">
-						<small>by</small>
-						Diego Díaz (<span class="text__green">DD</span>)
-					</p>
+				<div class="profile h1">
+					<figure class="profile__avatar">
+						<img class="img-fluid" src="/img/dd.jpg" alt="DD">
+					</figure>
+					<div>
+						<p>
+							<small>by</small>
+							Diego Díaz (<span class="text__green">DD</span>)
+							<br>
+							<small>
+								<a href="mailto:diego.diaz@toptal.com">diego.diaz@toptal.com</a>
+								<br>
+								Online slides <a href="http://css.world/toptal/flexbox/es">http://css.world/toptal/flexbox/es</a>
+							</small>
+						</p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- About -->
+		<slide data-hash="About">			
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">About me</h2>
+				<div class="row">
+					<div class="col-12">
+						<p>Trabajo hace un poco más de siete años en desarrollo web y durante mucho tiempo en marketing digital, con proyectos que requerían diseños complejos para llamar la atención.</p>
+						<p>Esto me dio la oportunidad de buscar y experimentar muchas formas de aprovechar CSS al máximo y poder "tropezar" con diversos enfoques.</p>
+						<p>Por suerte un día me topé con <span class="h1 text__green">Flexbox</span> y quise conocerlo.</p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- Facts -->
+		<slide data-hash="Topics">			
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Topics</h2>
+				<div class="row align-items-center">
+					<div class="col-md-5 col-12">
+						<img class="img-fluid" src="/img/css-peter.gif" alt="CSS">						
+					</div>
+					<div class="col-md-7 col-12">
+						<ul class="page-home__list">
+							<li>Some facts y beneficios de Flex</li>
+							<li>Macro Flex (Flex aplicado al contenedor)</li>					
+							<li>Micro Flex (Flex aplicado a los elementos)</li>
+							<li>Consideraciones al momento de usarlo</li>
+							<li>Casos de uso</li>
+							<li>Le Playground</li>
+							<li>Conclusión</li>
+						</ul>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- -- -->
+		<slide>			
+			<article class="page-home__slide">
+				<div class="row">
+					<div class="col-12">
+						<p>Pero primero...</p>
+						<img class="img-fluid img-center" src="/img/img-borderstyles.png" alt="CSS">
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- Why -->
+		<slide data-hash="Why">			
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">¿Por qué "Primera cita con Flex"?</h2>
+			</article>
+		</slide>
+		
+		<!-- Because -->
+		<slide data-hash="Because">			
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">¿Por qué "Primera cita con Flex"?</h2>
+				<div class="row">
+					<div class="col-12">
+						<p>Para llegar a una cita tiene que haber atracción, pero mejor si hay cierta mística.</p>
+						<p>Ya dieron el primer paso. Se animaron a venir a conocer Flex sin saber como va a terminar y por eso hoy es la primera cita.</p>
+						<p>Si sale todo bien podemos elegir incorporarlo en nuestras vidas o simplemente tenerlo en cuenta para un "touch and go".</p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- Intro -->
+		<slide data-hash="Intro">			
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Ahora sí, empecemos con la cita</h2>
+				<div class="row">
+					<div class="col-12">
+						<img class="img-fluid img-center" src="/img/img-date-1.jpg" alt="First Date with Flex">
+					</div>
 				</div>
 			</article>
 		</slide>
@@ -27,20 +122,27 @@
 		<!-- Facts -->
 		<slide data-hash="Facts">			
 			<article class="page-home__slide">
-				<h2 class="page-home__heading page-home__heading--toptal">Facts</h2>
-				<ul class="page-home__list">
-					<li>
-						<a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">Flexbox</a> 
-						was born in 2009 to provide a new layout system... a
-						<span class="text__green">"flex layout"</span> 
-					</li>
-					<li>
-						Flexbox is a complete ecosystem
-					</li>					
-					<li>
-						Yes... we can align vertically with just two lines of code
-					</li>
-				</ul>
+				<h2 class="page-home__heading page-home__heading--toptal">Some facts y beneficios de Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-md-6 col-12">
+						<img class="img-fluid" src="/img/img-vertical-align-situation.jpg" alt="First Date with Flex">
+					</div>
+					<div class="col-md-6 col-12">
+						<ul class="page-home__list">
+							<li>
+								<a href="https://www.w3.org/TR/css-flexbox-1/" target="_blank">Flexbox</a> 
+								nació en 2009 para proveer un nuevo sistema de layouts conocido como
+								<span class="text__green">"flex layout"</span> 
+							</li>
+							<li>
+								Flexbox o Flex es un ecosistema completo, distinto a otras múltiples propiedades de CSS3 que son independientes
+							</li>					
+							<li>
+								Sí... por fin podemos alinear elementos de manera vertical sin tener que aprender programación a bajo nivel
+							</li>
+						</ul>
+					</div>
+				</div>
 				<!-- 
 					===					
 					Other layouts systems are:
@@ -51,6 +153,169 @@
 					* Positioning: for creating complex layouts without a specific format					
 					===
 				-->				
+			</article>
+		</slide>
+		
+		<!-- Begin -->
+		<slide data-hash="Begin">			
+			<article class="page-home__slide">
+				<div class="row align-items-center">
+					<div class="col-12">
+						<img class="img-fluid img-center" src="/img/img-empezamos-con-flexbox.jpg" alt="First Date with Flex">
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- MacroFlex -->
+		<slide data-hash="MacroFlex">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex (Flex aplicado al contenedor)</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<img class="img-fluid border__blue" src="/img/img-contenedor.jpeg" alt="First Date with Flex">
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- display -->
+		<slide data-hash="display">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>display</code></h3>
+						<p>Es la propiedad más importante en el ecosistema the Flex layouts.</p>
+						<p>Sin esta, todas las otras no van a funcionar.</p>
+						<div hljs>
+.wrapper {
+	display: flex || inline-flex;
+}
+						</div>
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#display" target="_blank">display</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- flex-direction -->
+		<slide data-hash="flex-direction">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>flex-direction</code></h3>
+						<p>Se encarga de orientar los elementos contenidos.</p>
+						<div hljs>
+.wrapper {
+    flex-direction: row || row-reverse || column || column-reverse;
+}
+						</div>
+						<img class="img-fluid border__blue" src="/img/img-flex-direction.jpg" alt="First Date with Flex">
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#flex-direction" target="_blank">flex-direction</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- flex-wrap -->
+		<slide data-hash="flex-wrap">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>flex-wrap</code></h3>
+						<p>Dependiendo de esta propiedad los elementos se manejan en una sola línea o en múltiples. Bastante similar al efecto de <code>white-space</code> en elementos <code>inline</code>.</p>
+						<div hljs>
+.wrapper {
+    flex-wrap: nowrap || wrap || wrap-reverse;
+}
+						</div>
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#flex-wrap" target="_blank">flex-wrap</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- flex-flow -->
+		<slide data-hash="flex-flow">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>flex-flow</code></h3>
+						<p>Shorthand que combina <code>flex-direction</code> con <code>flex-wrap</code>.</p>
+						<div hljs>
+.wrapper {
+    flex-flow: {flex-direction} {flex-wrap};
+}
+						</div>
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#flex-flow" target="_blank">flex-flow</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- justify-content -->
+		<slide data-hash="justify-content">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>justify-content</code></h3>
+						<p>Controla horizontalmente la posición de los elementos, si la dirección es tipo <code>row</code>. De ser <code>column</code>, los posiciona verticalmente.</p>
+						<div hljs>
+.wrapper {
+    justify-content: flex-start || flex-end || center || space-around || space-between;
+}
+						</div>
+						<img class="img-fluid border__blue" src="/img/img-justify-content.jpg" alt="First Date with Flex">
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#justify-content" target="_blank">justify-content</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- align-items -->
+		<slide data-hash="align-items">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>align-items</code></h3>
+						<p>Similar a <code>justify-content</code>, controla verticalmente la posición de los elementos, si la dirección es tipo <code>row</code>. De ser <code>column</code>, los posiciona horizontalmente.</p>
+						<p>Su efecto solo tiene lugar cuando los elementos están en la misma línea.</p>
+						<div hljs>
+.wrapper {
+    align-items: flex-start || flex-end || center || stretch || baseline;
+}
+						</div>
+						<img class="img-fluid border__blue" src="/img/img-align-items.jpeg" alt="First Date with Flex">
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#align-items" target="_blank">align-items</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- align-content -->
+		<slide data-hash="align-content">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>align-content</code></h3>
+						<p>Similar a <code>justify-content</code> y a <code>align-items</code>, controla verticalmente la posición de los las filas de elementos, si la dirección es tipo <code>row</code>.
+						<p>No tienen ningún efecto si solamente hay una fila.</p>
+						<div hljs>
+.wrapper {
+    align-content: flex-start || flex-end || center || stretch || space-around || space-between;
+}
+						</div>
+						<img class="img-fluid border__blue" src="/img/img-align-content.jpeg" alt="First Date with Flex">
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#align-content" target="_blank">align-content</a></p>
+					</div>
+				</div>
 			</article>
 		</slide>
 		

@@ -24,7 +24,8 @@
       'ngAnimate',
       'ui.bootstrap',
       'duScroll',
-	  'ui.swiper'
+	  'ui.swiper',
+	  'hljs'
     ])
     .value('duScrollDuration', 500)
     .value('duScrollOffset', 60)
@@ -34,7 +35,7 @@
 
 
   // Add Injection for Config method
-  Config.$inject = ['$httpProvider', '$locationProvider', '$urlRouterProvider'];
+  Config.$inject = ['$httpProvider', '$locationProvider', '$urlRouterProvider', 'hljsServiceProvider'];
 
   /**
    * Configuration function for the App
@@ -44,7 +45,7 @@
    * @param urlRouterProvider
    * @constructor
    */
-  function Config(httpProvider, locationProvider, urlRouterProvider) {
+  function Config(httpProvider, locationProvider, urlRouterProvider, hljsServiceProvider) {
     //uncomment if you want to use html5 mode.
     locationProvider.html5Mode({
       enabled: true,
@@ -55,6 +56,12 @@
     delete httpProvider.defaults.headers.common['X-Requested-With'];
 
     urlRouterProvider.otherwise('/');
+	  
+	// Angular Highlight JS config
+    hljsServiceProvider.setOptions({
+      // replace tab with 4 spaces
+      tabReplace: '    '
+    });
   }
 
   // Add injections for AppController
