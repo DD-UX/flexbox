@@ -7,7 +7,7 @@
 	background: get-color("blue");
 	
 	.logo{
-		background: url(#{$img-route}img-toptal-logo@2x.png) no-repeat;
+		background: url(../img/img-toptal-logo@2x.png) no-repeat;
 		background-size: contain;
 		width: 200px;
 		height: 66px;
@@ -73,7 +73,7 @@
 			&:before{
 				content: "";
 				display: inline-block;
-				background: url(#{$img-route}favicon.png);
+				background: url(../img/favicon.png);
 				background-size: contain;
 				width: 26px;
 				height: 26px;

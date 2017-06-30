@@ -22,6 +22,7 @@ $screen-xs: map-get($grid-breakpoints, 'xs');
 
 // // Font Awesome: http://fortawesome.github.io/Font-Awesome/icons/
 @import '../../node_modules/font-awesome/scss/font-awesome';
+@import '../../node_modules/font-awesome/scss/_path';
   
 // Handmade shared components
 @import "shared-components/**/*";

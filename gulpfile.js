@@ -149,8 +149,7 @@ gulp.task('images', function() {
           ;
 
     var svgStream = gulp
-          .src(source + 'img/**/*.svg')
-          .pipe(svgmin());
+          .src(source + 'img/**/*.svg');
           
 
     return merge(svgStream, images)
