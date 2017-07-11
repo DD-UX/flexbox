@@ -66,8 +66,8 @@
 							<li>Some facts y beneficios de Flex</li>
 							<li>Macro Flex (aplicado al contenedor)</li>					
 							<li>Micro Flex (aplicado a los elementos)</li>
-							<li>Consideraciones al momento de usarlo</li>
 							<li>Casos de uso</li>
+							<li>Consideraciones al momento de usarlo</li>
 							<li>Le Playground</li>
 							<li>Conclusión</li>
 						</ul>
@@ -486,7 +486,7 @@
 		<!-- some considerations -->
 		<slide data-hash="SomeConsiderations">
 			<article class="page-home__slide">
-				<h2 class="page-home__heading page-home__heading--toptal">Algunas consideraciones</h2>
+				<h2 class="page-home__heading page-home__heading--toptal">Consideraciones al momento de usarlo</h2>
 				<div class="row align-items-center">
 					<div class="col-12">
 						<p>La sintaxis de Flexbox cambió muchas veces desde el primer spec y para maximizar la compatibilidad con navegadores más antiguos como Internet Explorer 10 y 11 hacen falta algunas consideraciones.</p>
@@ -501,22 +501,22 @@
 		<!-- old syntax -->
 		<slide data-hash="OldSyntax">
 			<article class="page-home__slide">
-				<h2 class="page-home__heading page-home__heading--toptal">Algunas consideraciones</h2>
-				<h3 class="text-left h5">Sintaxis año 2009</h3>
+				<h2 class="page-home__heading page-home__heading--toptal">Sintaxis</h2>
+				<h3 class="text-left h5">Año 2009</h3>
 				<div hljs>
 .wrapper {
     display: box;
     /* Y sus variantes -webkit-, -moz-, -ms-, -o- */
 }
 				</div>
-				<h3 class="text-left h5">Sintaxis año 2011</h3>
+				<h3 class="text-left h5">Año 2011</h3>
 				<div hljs>
 .wrapper {
     display: flexbox;
     /* Y sus variantes -webkit-, -moz-, -ms-, -o- */
 }
 				</div>
-				<h3 class="text-left h5">Sintaxis actual</h3>
+				<h3 class="text-left h5">Actual</h3>
 				<div hljs>
 .wrapper {
     display: flex;
@@ -559,7 +559,9 @@
 			<article class="page-home__slide">
 				<h2 class="page-home__heading page-home__heading--toptal">Flexbugs</h2>
 				<p><a href="https://github.com/philipwalton/flexbugs" target="_blank">Documentación</a> que reune los bugs de flex y a qué browsers y versiones afecta.</p>
-				
+				<p>Sin embargo la compatibilidad óptima está disponible en casi todo el espectro de browsers.</p>
+				<img class="full-responsive" src="img/img-flex-compatibility.png" alt="First Date with Flex">
+				<p class="text-right">Ver más en <a href="https://caniuse.com/#feat=flexbox" target="_blank">caniuse.com</a></p>
 			</article>
 		</slide>
 		
@@ -569,6 +571,17 @@
 				<h2 class="page-home__heading page-home__heading--toptal">Le Playground</h2>
 				<p>Campo de juego para practicar con Flex sin saber su sintaxis de memoria.</p>
 				<iframe src="//codepen.io/Diegue/embed/rjRrgW?height=640&amp;theme-id=0&amp;slug-hash=rjRrgW&amp;default-tab=result&amp;user=Diegue&amp;embed-version=2&amp;pen-title=Flexbox%20%40Toptal%20-%20Flexbox%20playground" scrolling="no" frameborder="0" height="640" allowtransparency="true" allowfullscreen="true" name="CodePen Embed" title="Flexbox @Toptal - Flexbox playground" style="width: 100%; overflow: hidden;"></iframe>
+			</article>
+		</slide>
+		
+		<!-- Conclusion -->
+		<slide data-hash="Conclusion">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Conclusión</h2>
+				<p>Flexbox es una herramienta muy poderosa, y si bien hay navegadores casi en desuso que tienen pequeños bugs, no son blockers al momento de armar layouts de gran categoría.</p>
+				<p>Flex no es difícil, pero tiene mucha potencia por sus múltiples propiedades, por lo que es necesario tenerlas en cuenta y eso puede requerir cierta práctica.</p>
+				<p>Puede que para aquellos que no trabajen con herramientas de compilación sea más molesto prefixar el código (aunque no sea imposible con internet), por lo que les recomiendo proponer su inclusión, ya sea en su lugar de trabajo, sus clientes o a ustedes mismos.</p>
+				<p class="h1">¡El límite es el cielo!</p>
 			</article>
 		</slide>
 		
