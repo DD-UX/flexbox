@@ -59,7 +59,9 @@ gulp.task('sass', function () {
   var sassStream,
       cssStream,
       processors = [
-        autoprefixer( {browsers: ['last 4 versions']} )
+        autoprefixer({
+			browsers: ['last 4 versions']
+		})
       ];
 
   // CSS Files from NPM
@@ -194,6 +196,9 @@ gulp.task('default', ['dependencies'], function() {
 
   // Gulp watch Sass changes
   gulp.watch(source + '**/*.scss', ['sass']);
+  
+  // Gulp watch Images changes
+  gulp.watch(source + '**/*.{png,jpg,jpeg,gif}', ['images']);
 
   // Gulp watch Scripts changes
   gulp.watch([

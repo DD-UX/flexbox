@@ -11,9 +11,9 @@
 		
 		<!-- Cover -->
 		<slide data-hash="Cover">
-			<h1 class="logo">Toptal</h1>
+<!--			<h1 class="logo">Toptal</h1>-->
 			<h2 class="page-home__heading page-home__heading--big">
-				First date with <span class="text__green">Flex</span>
+				First date with <a class="text__green">Flex</a>
 				<small>(Primera cita con Flex)</small>
 			</h2>
 			<article class="page-home__slide">
@@ -24,14 +24,15 @@
 					<div>
 						<p>
 							<small>by</small>
-							Diego Díaz (<span class="text__green">DD</span>)
+							Diego Díaz (<a href="https://www.toptal.com/resume/diego-diaz" target="_blank">DD</a>)
 							<br>
-							<small>
-								<a href="mailto:diego.diaz@toptal.com">diego.diaz@toptal.com</a>
-								<br>
-								Online slides <a href="http://css.world/toptal/flexbox/es">http://css.world/toptal/flexbox/es</a>
-							</small>
+							<a class="small" href="mailto:diego.diaz@toptal.com">diego.diaz@toptal.com</a>
 						</p>
+						<ul class="profile__list">
+							<li>Esta charla: <a href="http://css.world/toptal/flexbox/es" target="_blank">http://css.world/toptal/flexbox/es</a></li>
+							<li>Ejemplos: <a href="https://codepen.io/collection/AYGvVL/" target="_blank">https://codepen.io/collection/AYGvVL/</a></li>
+							<li><a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#discover-dynamite-computer-engineers-today" target="_blank">How to Build CSS-only Smart Layouts with Flexbox</a></li>
+						</ul>
 					</div>
 				</div>
 			</article>
@@ -62,8 +63,8 @@
 					<div class="col-md-7 col-12">
 						<ul class="page-home__list">
 							<li>Some facts y beneficios de Flex</li>
-							<li>Macro Flex (Flex aplicado al contenedor)</li>					
-							<li>Micro Flex (Flex aplicado a los elementos)</li>
+							<li>Macro Flex (aplicado al contenedor)</li>					
+							<li>Micro Flex (aplicado a los elementos)</li>
 							<li>Consideraciones al momento de usarlo</li>
 							<li>Casos de uso</li>
 							<li>Le Playground</li>
@@ -79,7 +80,7 @@
 			<article class="page-home__slide">
 				<div class="row">
 					<div class="col-12">
-						<p>Pero primero...</p>
+						<p class="h1">Pero primero...</p>
 						<img class="img-fluid img-center" src="img/img-borderstyles.png" alt="CSS">
 					</div>
 				</div>
@@ -134,12 +135,9 @@
 								nació en 2009 para proveer un nuevo sistema de layouts conocido como
 								<span class="text__green">"flex layout"</span> 
 							</li>
-							<li>
-								Flexbox o Flex es un ecosistema completo, distinto a otras múltiples propiedades de CSS3 que son independientes
-							</li>					
-							<li>
-								Sí... por fin podemos alinear elementos de manera vertical sin tener que aprender programación a bajo nivel
-							</li>
+							<li>Flexbox o Flex es un ecosistema completo, distinto a otras múltiples propiedades de CSS3 que son independientes</li>					
+							<li>Flex nos permite organizar el flujo de los elementos de nuevas maneras</li>					
+							<li>Por fin podemos alinear elementos verticalmente de manera simple</li>
 						</ul>
 					</div>
 				</div>
@@ -170,7 +168,7 @@
 		<!-- MacroFlex -->
 		<slide data-hash="MacroFlex">
 			<article class="page-home__slide">
-				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex (Flex aplicado al contenedor)</h2>
+				<h2 class="page-home__heading page-home__heading--toptal">Macro Flex (aplicado al contenedor)</h2>
 				<div class="row align-items-center">
 					<div class="col-12">
 						<img class="img-fluid border__blue" src="img/img-contenedor.jpeg" alt="First Date with Flex">
@@ -305,7 +303,7 @@
 				<div class="row align-items-center">
 					<div class="col-12">
 						<h3>Propiedad: <code>align-content</code></h3>
-						<p>Similar a <code>justify-content</code> y a <code>align-items</code>, controla verticalmente la posición de los las filas de elementos, si la dirección es tipo <code>row</code>.
+						<p>Similar a <code>justify-content</code> y a <code>align-items</code>, controla verticalmente la posición de los las filas de elementos, si la dirección es tipo <code>row</code>.</p>
 						<p>No tienen ningún efecto si solamente hay una fila.</p>
 						<div hljs>
 .wrapper {
@@ -316,6 +314,250 @@
 						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#align-content" target="_blank">align-content</a></p>
 					</div>
 				</div>
+			</article>
+		</slide>
+		
+		<!-- MacroFlex -->
+		<slide data-hash="MicroFlex">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Micro Flex (aplicado a los elementos)</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<img class="img-fluid border__blue" src="img/img-micro-flex.jpg" alt="First Date with Flex">
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- flex-grow -->
+		<slide data-hash="flex-grow">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Micro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>flex-grow</code></h3>
+						<p>Proporción de crecimiento con respecto a los elementos hermanos. La medida se configura en números naturales y el cero (valor por defecto, el elemento no crece).</p>
+						<div hljs>
+.wrapper .elements {
+    flex-grow: 1; /* Default 0 */
+}
+.wrapper .elements:nth-child(5) {
+    flex-grow: 2;
+}
+						</div>
+						<img class="img-fluid border__blue" src="img/img-flex-grow.jpeg" alt="First Date with Flex">
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#flex-grow" target="_blank">flex-grow</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- flex-shrink -->
+		<slide data-hash="flex-shrink">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Micro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>flex-shrink</code></h3>
+						<p>Similar a <code>flex-grow</code>, esta propiedad establece la relación de decrecimiento con respecto a sus elementos hermanos. La medida se configura en números naturales y el cero (valor por defecto, el elemento no decrece).</p>
+						<div hljs>
+.wrapper .elements {
+    flex-shrink: 1; /* Default 0 */
+}
+.wrapper .elements:first-child {
+    flex-shrink: 2;
+}
+						</div>
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#flex-shrink" target="_blank">flex-shrink</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- flex-basis -->
+		<slide data-hash="flex-basis">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Micro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>flex-basis</code></h3>
+						<p>Tamaño fijo o proporcional que se le asigna a un elemento.</p>
+						<p>Similar a <code>width</code>, asigna un tamaño previo a distribuir el espacio disponible del contenedor.</p>
+						<p><small><i><b class="text__green">Hint:</b> </i><code>flex-basis</code><i> no soporta </i><code>calc()</code><i> ni </i><code>box-sizing</code><i> en Internet Explorer 10 ni 11. Si necesitan soporte es preferible no definir esta propiedad y usar </i><code>width</code><i>.</i></small></p>
+						<div hljs>
+.wrapper .element {
+    flex-basis: 100px; /* Default auto */
+}
+						</div>
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#flex-basis" target="_blank">flex-basis</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- flex -->
+		<slide data-hash="flex">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Micro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>flex</code></h3>
+						<p>Shorthand que combina <code>flex-grow</code>, <code>flex-shrink</code> y <code>flex-basis</code>.</p>
+						<p><small><i><b class="text__green">Hint:</b> Si van a usar</i><code>flex</code><i> asegúrense de definir los tres valores (aunque sean sus valores por defecto). Las versiones más viejas de los navegadores pueden romper el layout por inconvenientes de compatibilidad.</i></small></p>
+						<div hljs>
+.wrapper .element {
+    flex: {flex-grow} {flex-shrink} {flex-basis};
+}
+						</div>
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#flex" target="_blank">flex</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- align-self -->
+		<slide data-hash="align-self">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Micro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>align-self</code></h3>
+						<p>Podemos decir que es el equivalente a <code>align-items</code> pero aplicado directamente al elemento.</p>
+						<p>Controla verticalmente la posición del mismo, si la dirección es tipo <code>row</code>. De ser <code>column</code>, lo posiciona horizontalmente.</p>
+						<p>Su efecto solo se aplica en el espacio de su propia fila, sin interferir con otras.</p>
+						<div hljs>
+.wrapper .element {
+    align-self: flex-start || flex-end || center || stretch || baseline;
+}
+						</div>
+						<img class="img-fluid border__blue" src="img/img-align-self.jpeg" alt="First Date with Flex">
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#align-self" target="_blank">align-self</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- order -->
+		<slide data-hash="order">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Micro Flex</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<h3>Propiedad: <code>order</code></h3>
+						<p>Nos permite brindar un orden a los elementos sin tener que modificar el DOM. Los valores posibles son números enteros, siendo cero el valor por defecto.</p>
+						<div hljs>
+.wrapper .elements {
+    order: 1;   /* Estos elementos se posicionan al final */
+}
+.wrapper .elements:last-child {
+    order: -1;   /* Este elemento se posiciona al comienzo */
+}
+						</div>
+						<img class="img-fluid border__blue" src="img/img-order.jpeg" alt="First Date with Flex">
+						<p class="text-right">Ver más sobre <a href="https://www.toptal.com/front-end/how-to-build-css-only-smart-layouts-with-flexbox#order" target="_blank">order</a></p>
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- use cases -->
+		<slide data-hash="UseCases">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Casos de uso</h2>
+				<p>Estos son algunos ejemplos que armé usando Flex como ejemplos. Así como estos se pueden hacer muchas cosas más!</p>
+				<div class="row align-items-center justify-content-center">
+					<div class="col-12 col-md-6">
+						<ul class="page-home__list">
+							<li><a href="https://codepen.io/Diegue/full/MJMPOm" target="_blank">Vertical align</a></li>
+							<li><a href="https://codepen.io/Diegue/full/YNbZWe" target="_blank">Panel dividido</a></li>
+							<li><a href="https://codepen.io/Diegue/full/GraWPe" target="_blank">Navbar fluído</a></li>
+							<li><a href="https://codepen.io/Diegue/full/YNbQVG" target="_blank">Blurbs</a></li>
+						</ul>
+					</div>
+					<div class="col-12 col-md-6">
+						<img class="img-fluid border__blue" src="img/img-pierden-la-cabeza.jpeg" alt="First Date with Flex">
+					</div>
+				</div>
+			</article>
+		</slide>
+		
+		<!-- some considerations -->
+		<slide data-hash="SomeConsiderations">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Algunas consideraciones</h2>
+				<div class="row align-items-center">
+					<div class="col-12">
+						<p>La sintaxis de Flexbox cambió muchas veces desde el primer spec y para maximizar la compatibilidad con navegadores más antiguos como Internet Explorer 10 y 11 hacen falta algunas consideraciones.</p>
+						<img class="img-fluid border__blue" src="img/img-flex-compatibility.gif" alt="First Date with Flex">
+					</div>
+				</div>
+				
+				
+			</article>
+		</slide>
+		
+		<!-- old syntax -->
+		<slide data-hash="OldSyntax">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Algunas consideraciones</h2>
+				<h3 class="text-left h5">Sintaxis año 2009</h3>
+				<div hljs>
+.wrapper {
+    display: box;
+    /* Y sus variantes -webkit-, -moz-, -ms-, -o- */
+}
+				</div>
+				<h3 class="text-left h5">Sintaxis año 2011</h3>
+				<div hljs>
+.wrapper {
+    display: flexbox;
+    /* Y sus variantes -webkit-, -moz-, -ms-, -o- */
+}
+				</div>
+				<h3 class="text-left h5">Sintaxis actual</h3>
+				<div hljs>
+.wrapper {
+    display: flex;
+    /* Y sus variantes -webkit-, -moz-, -ms-, -o- */
+}
+				</div>
+				<p class="text-right">Ver más sobre <a href="https://css-tricks.com/old-flexbox-and-new-flexbox/" target="_blank">sintaxis</a></p>
+			</article>
+		</slide>
+		
+		<!-- some considerations -->
+		<slide>
+			<article class="page-home__slide">
+				<img class="img-fluid border__blue" src="img/img-flexbox-como-hago.jpg" alt="First Date with Flex">
+			</article>
+		</slide>
+		
+		<!-- autoprefixer -->
+		<slide data-hash="Autoprefixer">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Autoprefixer</h2>
+				<p>Práctica por la que se procesa el CSS, sea generado de Sass/LESS o no, para añadir los prefijos necesarios (se pueden configurar la cantidad de versiones anteriores que soporte).</p>
+				<h3 class="text-left">Ruby:</h3>
+				<ul class="page-home__list small">
+					<li><a href="https://github.com/ai/autoprefixer-rails" target="_blank">Autoprefixer Rails</a></li>
+					<li><a href="https://rubygems.org/gems/middleman-autoprefixer/versions/2.7.0" target="_blank">Middleman Autoprefixer</a></li>
+				</ul>
+				<h3 class="text-left">Node.js:</h3>
+				<ul class="page-home__list small">
+					<li><a href="https://github.com/postcss/autoprefixer" target="_blank">PostCSS Autoprefixer</a></li>
+					<li><a href="https://github.com/nDmitry/grunt-autoprefixer" target="_blank">Grunt Autoprefixer</a></li>
+					<li><a href="https://www.npmjs.com/package/autoprefixer" target="_blank">Gulp Autoprefixer</a></li>
+				</ul>
+				<img class="img-fluid border__blue" src="img/img-flexbox-sin-autoprefixer.jpeg" alt="First Date with Flex">
+			</article>
+		</slide>
+		
+		<!-- flexbugs -->
+		<slide data-hash="Flexbugs">
+			<article class="page-home__slide">
+				<h2 class="page-home__heading page-home__heading--toptal">Flexbugs</h2>
+				<p><a href="https://github.com/philipwalton/flexbugs" target="_blank">Documentación</a> que reune los bugs de flex y a qué browsers y versiones afecta.</p>
+				
 			</article>
 		</slide>
 		

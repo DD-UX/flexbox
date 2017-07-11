@@ -6,6 +6,11 @@
 	$this: &;
 	background: get-color("blue");
 	
+	.img-fluid{
+		width: 100%;
+		max-width: 640px;
+	}
+	
 	.logo{
 		background: url(../img/img-toptal-logo@2x.png) no-repeat;
 		background-size: contain;
@@ -49,6 +54,14 @@
 				border-radius: 50%;
 			}
 		}
+		
+		&__list{
+			font-size: 0.6em;
+			padding-left: 1.3em;
+			li{
+				margin-bottom: $spacer/2;
+			}
+		}
 	}
 	
 	.img-center{
@@ -73,7 +86,7 @@
 			&:before{
 				content: "";
 				display: inline-block;
-				background: url(../img/favicon.png);
+//				background: url(../img/favicon.png);
 				background-size: contain;
 				width: 26px;
 				height: 26px;
@@ -90,25 +103,25 @@
 	
 	
 	.swiper-slide{
-		&:after{
-			content: "";
-			display: block;
-			background: url(#{$img-route}img-toptal-logo.svg) no-repeat;
-			background-size: contain;
-			position: absolute;
-			left: 0;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			opacity: 0.1;
-			z-index: -1;
-			transform: rotate(-45deg);
-		}
+//		&:after{
+//			content: "";
+//			display: block;
+////			background: url(#{$img-route}img-toptal-logo.svg) no-repeat;
+//			background-size: contain;
+//			position: absolute;
+//			left: 0;
+//			top: 0;
+//			right: 0;
+//			bottom: 0;
+//			opacity: 0.1;
+//			z-index: -1;
+//			transform: rotate(-45deg);
+//		}
 	}
 	
 	&__slide{
 		width: 100%;
-		max-width: 980px;
+		max-width: 1110px;
 		overflow: auto;
     	padding: 3rem 0;
 		
